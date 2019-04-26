@@ -16,4 +16,4 @@ export default function getKnobs(data, knobsFormat) {
     );
 
     return result;
-};
+}
