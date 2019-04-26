@@ -1,6 +1,6 @@
 import { boolean, text, object } from '@storybook/addon-knobs';
 
-export default (data, knobsFormat) => {
+export default function getKnobs(data, knobsFormat) {
     const result: {[key: string]: any} = {};
 
     Object.keys(knobsFormat).forEach(
