@@ -43,7 +43,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     backgroundColor!: string | null;
 
     viewportUtil = new ViewportUtil();
-    imageLoaded: boolean = true;
+    imageLoaded: boolean = false;
     ready:boolean = false;
     width: number = 0;
     height: number = 0;
