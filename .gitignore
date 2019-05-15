@@ -9,3 +9,4 @@ selenium-debug.log
 statistics.html
 storybook-static
 .scannerwork
+test/__image_snapshots__/__diff_output__

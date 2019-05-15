@@ -15,7 +15,8 @@ module.exports = {
         '/node_modules/(?!(@storybook/.*\\.vue$))'
     ],
     testMatch: [
-        '**/test/?(*.)+(snapshots.spec).(ts|js)?(x)'
+        '**/test/?(*.)+(snapshots.spec).(ts|js)?(x)',
+        '**/test/?(*.)+(imageshots.spec).(ts|js)?(x)'
     ],
     moduleFileExtensions: ['vue', 'ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     moduleDirectories: [
