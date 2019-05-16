@@ -69,7 +69,7 @@ podTemplate(
           },
           'storybook': {
             container('node') {
-              sh 'npm run build-storybook'
+              sh 'npm run build:storybook'
             }
           }
         )

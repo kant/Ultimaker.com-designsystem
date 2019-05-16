@@ -9,16 +9,8 @@ const getMatchOptions = ({ context: { kind, story }, url }) => {
     };
 };
 
-const beforeScreenshot = (page) => {
-    return new Promise(resolve =>
-        setTimeout(() => {
-            resolve();
-        }, 200)
-    );
-};
-
 initStoryshots({
     framework: 'vue',
     configPath: path.join(__dirname, '../.storybook'),
-    test: imageSnapshot({ storybookUrl: `file://${path.join(__dirname, '../storybook-static')}`, getMatchOptions, beforeScreenshot })
+    test: imageSnapshot({ storybookUrl: `file://${path.join(__dirname, '../storybook-static')}`, getMatchOptions })
 });

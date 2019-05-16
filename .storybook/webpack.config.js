@@ -15,7 +15,8 @@ module.exports = ({config, mode}) => {
     config.plugins.push(
         new webpack.DefinePlugin({
             'process.env': {
-                NODE_ENV: '"production"'
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'production'),
+                BABEL_ENV: JSON.stringify(process.env.BABEL_ENV)
             }
         })
     );
@@ -34,9 +35,10 @@ module.exports = ({config, mode}) => {
         })
     );
 
+
     const newConfig = merge(projectConfig, config);
 
-    // console.log(require('util').inspect(config, false, null, true));
-    // process.exit();
+    //console.log(require('util').inspect(config, false, null, true));
+    //process.exit();
     return newConfig;
 };

@@ -49,7 +49,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     height: number = 0;
 
     async mounted() {
-        if (!BrowserCapabilities.isBrowser) return;
+        if (!BrowserCapabilities.isBrowser || process.env.BABEL_ENV === 'test') return;
 
         this.viewportUtil.addResizeHandler(this.resizeHandler);
 

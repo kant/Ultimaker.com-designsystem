@@ -13,22 +13,18 @@
                 ["env", {
                     "debug": false,
                     "useBuiltIns": true
-                }]
+                }],
+                "stage-2"
             ],
-            "plugins": [
-                [
-                    "istanbul",
-                    {
-                        "exclude": [
-                            "**/*.spec.{j,t}s",
-                            "**/*.stories.{j,t}s"
-                        ]
-                    }
-                ]
-            ]
         },
         "jest": {
-            "presets": ["env"],
+            "presets": [
+                ["env", {
+                    "debug": false,
+                    "useBuiltIns": true
+                }],
+                "stage-2"
+            ],
             "plugins": [
                 [
                     "require-context-hook"
