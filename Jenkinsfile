@@ -53,6 +53,12 @@ podTemplate(
             }
           },
           'snapshot tests': {
+            if (env.BRANCH_NAME.startsWith('PR-')) {
+              copyArtifacts projectName: 'Ultimaker.com-designsystem',
+                optional: false,
+                selector: 'lastSuccessful',
+                filter: 'test/__image_snapshots__/**'
+            }
             container('node') {
               sh 'npm run snapshots'
             }
@@ -177,6 +183,10 @@ podTemplate(
 
       if (currentResult == 'SUCCESS') {
         // This will run only if the run was marked as success
+
+        if ('master' == env.BRANCH_NAME) {
+          archiveArtifacts artifacts: 'test/__image_snapshots__/**', fingerprint: true
+        }
       }
 
       if (previousResult != null && previousResult != currentResult) {

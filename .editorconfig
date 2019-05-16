@@ -28,3 +28,6 @@ indent_size = 2
 [*.md]
 # 2 trailing spaces in Markdown are a newline
 trim_trailing_whitespace = false
+
+[Jenkinsfile]
+indent_size = 2
