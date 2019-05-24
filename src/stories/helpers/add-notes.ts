@@ -1,5 +1,5 @@
-export const addNotes = (notes) => {
+export const addNotes = (notes: string) => {
     return {
         notes,
     };
-}
+};

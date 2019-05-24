@@ -5,7 +5,7 @@ const availableDecorators = {
     withKnobs,
 };
 
-export const addStories = (providedOptions) => {
+export const addStories = (providedOptions: object) => {
     const defaultOptions = {
         data: {},
         decorators: [],
@@ -32,4 +32,4 @@ export const addStories = (providedOptions) => {
             options.notes,
         ),
     );
-}
+};

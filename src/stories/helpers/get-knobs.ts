@@ -1,13 +1,13 @@
 import { boolean, text, object } from '@storybook/addon-knobs';
 
-export const getKnobs = (data, knobsFormat) => {
-    const result: {[key: string]: any} = {};
+export const getKnobs = (data: object, knobsFormat: object) => {
+    const result: { [key: string]: any } = {};
 
     Object.keys(knobsFormat).forEach(
         (property) => {
             if (typeof data[property] === 'string') {
                 result[property] = text(property, data[property]);
-            } else  if (typeof data[property] === 'boolean') {
+            } else if (typeof data[property] === 'boolean') {
                 result[property] = boolean(property, data[property]);
             } else {
                 result[property] = object(property, data[property]);
@@ -16,4 +16,4 @@ export const getKnobs = (data, knobsFormat) => {
     );
 
     return result;
-}
+};
