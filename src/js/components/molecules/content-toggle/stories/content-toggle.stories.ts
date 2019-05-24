@@ -1,9 +1,11 @@
 import { action } from '@storybook/addon-actions';
+
+import { addNotes } from 'src/stories/helpers/add-notes';
+import { addStories } from 'src/stories/helpers/add-stories';
+import { getKnobs } from 'src/stories/helpers/get-knobs';
+
 import { data } from '../data/content-toggle.data';
-import addNotes from 'src/stories/helpers/add-notes';
-import addStories from 'src/stories/helpers/add-stories';
-import getKnobs from 'src/stories/helpers/get-knobs';
-import knobsFormat from 'components/molecules/content-toggle/stories/content-toggle.knobs-format';
+import { knobsFormat } from 'components/molecules/content-toggle/stories/content-toggle.knobs-format';
 
 const getStory = (type) => {
     return () => {

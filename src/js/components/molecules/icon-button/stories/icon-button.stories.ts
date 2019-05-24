@@ -1,8 +1,9 @@
+import { addNotes } from 'src/stories/helpers/add-notes';
+import { addStories } from 'src/stories/helpers/add-stories';
+import { getKnobs } from 'src/stories/helpers/get-knobs';
+
 import { data } from '../data/icon-button.data';
-import addNotes from 'src/stories/helpers/add-notes';
-import addStories from 'src/stories/helpers/add-stories';
-import getKnobs from 'src/stories/helpers/get-knobs';
-import knobsFormat from 'components/molecules/icon-button/stories/icon-button.knobs-format';
+import { knobsFormat } from 'components/molecules/icon-button/stories/icon-button.knobs-format';
 
 const getStory = (type) => {
     return () => {

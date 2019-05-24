@@ -1,6 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs} from '@storybook/addon-knobs';
-import getKnobs from '../data/data.knobs';
+import {getKnobs} from '../data/data.knobs';
 
 storiesOf('Atoms|anchors', module)
     .addDecorator(withKnobs)

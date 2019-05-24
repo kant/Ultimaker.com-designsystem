@@ -1,4 +1,4 @@
-export default {
+export const knobsFormat = {
     properties: [],
     title: '',
     type: '',

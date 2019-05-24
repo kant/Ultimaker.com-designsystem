@@ -1,9 +1,9 @@
-import addNotes from 'src/stories/helpers/add-notes';
-import addStories from 'src/stories/helpers/add-stories';
-import getKnobs from 'src/stories/helpers/get-knobs';
+import { addNotes } from 'src/stories/helpers/add-notes';
+import { addStories } from 'src/stories/helpers/add-stories';
+import { getKnobs } from 'src/stories/helpers/get-knobs';
 
 import { data } from '../data/brands.data';
-import knobsFormat from './brands.knobs-format';
+import { knobsFormat } from './brands.knobs-format';
 
 const getStory = (type) => {
     return () => {

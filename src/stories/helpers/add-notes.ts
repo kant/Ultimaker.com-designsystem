@@ -1,4 +1,4 @@
-export default function addNotes(notes) {
+export const addNotes = (notes) => {
     return {
         notes,
     };

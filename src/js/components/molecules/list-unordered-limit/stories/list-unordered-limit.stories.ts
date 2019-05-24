@@ -1,9 +1,9 @@
-import addNotes from 'src/stories/helpers/add-notes';
-import addStories from 'src/stories/helpers/add-stories';
-import getKnobs from 'src/stories/helpers/get-knobs';
+import { addNotes } from 'src/stories/helpers/add-notes';
+import { addStories } from 'src/stories/helpers/add-stories';
+import { getKnobs } from 'src/stories/helpers/get-knobs';
 
 import { data } from '../data/list-unordered-limit.data';
-import knobsFormat from './list-unordered-limit.knobs-format';
+import { knobsFormat } from './list-unordered-limit.knobs-format';
 
 const getStory = (type) => {
     return () => {

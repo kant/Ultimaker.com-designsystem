@@ -1,4 +1,4 @@
-export default {
+export const knobsFormat = {
     rgbHex: '',
     opacity: 100,
 };

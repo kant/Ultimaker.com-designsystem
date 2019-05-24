@@ -1,6 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs} from '@storybook/addon-knobs';
-import getKnobs from 'atoms/li-item/data/data.knobs';
+import {getKnobs} from 'atoms/li-item/data/data.knobs';
 
 storiesOf('Atoms|list items/li-inline', module)
     .addDecorator(withKnobs)

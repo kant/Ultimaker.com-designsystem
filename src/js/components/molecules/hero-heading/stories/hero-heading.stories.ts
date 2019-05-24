@@ -1,9 +1,9 @@
-import addNotes from 'src/stories/helpers/add-notes';
-import addStories from 'src/stories/helpers/add-stories';
-import getKnobs from 'src/stories/helpers/get-knobs';
+import { addNotes } from 'src/stories/helpers/add-notes';
+import { addStories } from 'src/stories/helpers/add-stories';
+import { getKnobs } from 'src/stories/helpers/get-knobs';
 
 import { data } from '../data/hero-heading.data';
-import knobsFormat from './hero-heading.knobs-format';
+import { knobsFormat } from './hero-heading.knobs-format';
 
 const getStory = (type) => {
     return () => {

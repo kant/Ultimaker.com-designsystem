@@ -1,6 +1,6 @@
 import data from './data';
 import {text} from '@storybook/addon-knobs';
 
-export default () => ({
+export const getKnobs = () => ({
     item: text('item', data.item)
 });

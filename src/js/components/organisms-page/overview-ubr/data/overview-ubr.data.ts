@@ -1,6 +1,6 @@
 import blockIconMock from '../../../molecules/block-icon/data/block-icon.data';
 
-export default (amountOfItems: number) => {
+export const overviewUBRData = (amountOfItems: number) => {
     const blockIconMocks: any[] = [];
 
     for (let i = 0; i < amountOfItems; i += 1) {

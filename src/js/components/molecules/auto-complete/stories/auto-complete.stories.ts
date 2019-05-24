@@ -1,10 +1,11 @@
 import { action } from '@storybook/addon-actions';
 
+import { addNotes } from 'src/stories/helpers/add-notes';
+import { addStories } from 'src/stories/helpers/add-stories';
+import { getKnobs } from 'src/stories/helpers/get-knobs';
+
 import { data } from '../data/auto-complete.data';
-import addNotes from 'src/stories/helpers/add-notes';
-import addStories from 'src/stories/helpers/add-stories';
-import getKnobs from 'src/stories/helpers/get-knobs';
-import knobsFormat from './auto-complete.knobs-format';
+import { knobsFormat } from './auto-complete.knobs-format';
 
 const getStory = (type) => {
     return () => {

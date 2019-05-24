@@ -5,7 +5,7 @@ const availableDecorators = {
     withKnobs,
 };
 
-export default function addStories(providedOptions) {
+export const addStories = (providedOptions) => {
     const defaultOptions = {
         data: {},
         decorators: [],
