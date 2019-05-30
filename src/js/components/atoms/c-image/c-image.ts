@@ -12,35 +12,16 @@ import WithRender from './c-image.vue.html';
 })
 
 export default class CImage extends Mixins(InView) implements ICImageProps {
-    @Prop({ type: String, required: true })
-    mimeType!: string;
-
-    @Prop({ type: String, required: true })
-    url!: string;
-
-    @Prop({ type: String, default: '' })
-    alt!: string;
-
-    @Prop({ type: Boolean, default: false })
-    crop!: boolean;
-
-    @Prop({ type: String, default: ImageFormat.default })
-    imageFormat!: ImageFormat;
-
-    @Prop({ type: String, default: ResizeBehavior.default })
-    resizeBehavior!: ResizeBehavior;
-
-    @Prop({ type: String, default: FocusArea.center })
-    focusArea!: FocusArea;
-
-    @Prop({ type: Number, default: 0 })
-    radius!: number;
-
-    @Prop({ type: Number, default: 65 })
-    quality!: number;
-
-    @Prop({ type: String, default: null })
-    backgroundColor!: string | null;
+    @Prop({ type: String, required: true }) mimeType!: string;
+    @Prop({ type: String, required: true }) url!: string;
+    @Prop({ type: String, required: true }) alt!: string;
+    @Prop({ type: Boolean, default: false }) crop!: boolean;
+    @Prop({ type: String, default: ImageFormat.default }) imageFormat!: ImageFormat;
+    @Prop({ type: String, default: ResizeBehavior.default }) resizeBehavior!: ResizeBehavior;
+    @Prop({ type: String, default: FocusArea.center }) focusArea!: FocusArea;
+    @Prop({ type: Number, default: 0 }) radius!: number;
+    @Prop({ type: Number, default: 65 }) quality!: number;
+    @Prop({ type: String, default: '' }) backgroundColor!: string;
 
     viewportUtil = new ViewportUtil();
     imageLoaded: boolean = false;

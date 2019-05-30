@@ -1,4 +1,4 @@
-import { data as imageData } from 'components/atoms/c-image/data/c-image.data';
+import { tinyCar as imageData } from 'components/atoms/c-image/data/examples/tiny-car';
 
 const columnCta = {
     type: 'ContentButton',
@@ -14,17 +14,17 @@ export const data = {
             columns: [
                 {
                     title: 'Product title 1',
-                    image: imageData.default,
+                    image: imageData,
                     cta: columnCta,
                 },
                 {
                     title: 'Product title 2',
-                    image: imageData.default,
+                    image: imageData,
                     cta: columnCta,
                 },
                 {
                     title: 'Product title 3',
-                    image: imageData.default,
+                    image: imageData,
                     cta: columnCta,
                 },
             ],
