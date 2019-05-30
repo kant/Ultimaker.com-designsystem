@@ -29,7 +29,6 @@ exports[`Storyshots Atoms|list items/li-item card-product 1`] = `
             class="img--contain card-product__image img--loading"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-            type="Image"
           />
            
           <!---->

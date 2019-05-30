@@ -9,28 +9,7 @@ exports[`Storyshots Molecules|lists/list-unordered li-item 1`] = `
   >
     <ul
       class="list"
-    >
-      <li
-        class="list__item"
-      >
-        Abrasion-resistant
-      </li>
-      <li
-        class="list__item"
-      >
-        Durable
-      </li>
-      <li
-        class="list__item"
-      >
-        High strength-to-weight ratio
-      </li>
-      <li
-        class="list__item"
-      >
-        Low friction coefficient
-      </li>
-    </ul>
+    />
   </section>
 </section>
 `;
@@ -67,7 +46,6 @@ exports[`Storyshots Molecules|lists/list-unordered li-item-card-product 1`] = `
               class="img--contain card-product__image img--loading"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-              type="Image"
             />
              
             <!---->
@@ -225,7 +203,6 @@ exports[`Storyshots Molecules|lists/list-unordered li-item-card-product 1`] = `
               class="img--contain card-product__image img--loading"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-              type="Image"
             />
              
             <!---->

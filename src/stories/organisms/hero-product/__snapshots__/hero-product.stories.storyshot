@@ -66,7 +66,6 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                 class="hero__image"
               >
                 <img
-                  alt=""
                   alt_text="Some alt text"
                   class="img--contain img--loading"
                   links="[object Object]"
