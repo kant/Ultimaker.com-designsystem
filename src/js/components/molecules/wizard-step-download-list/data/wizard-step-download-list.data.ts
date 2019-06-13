@@ -32,4 +32,27 @@ export const data = {
             label: 'Download now',
         },
     },
+    'two-options': {
+        type: 'WizardStepDownloadList',
+        title: 'Download Firmware',
+        description: 'Make sure to download the correct firmware for your printer.',
+        items: [{
+            image,
+            description: 'Ultimaker 2+',
+            file: 'http://speed.transip.nl/1gb.bin?win',
+            title: 'Ultimaker 2+ Firmware v1.0',
+            name: 'download',
+            selected: false,
+        }, {
+            image,
+            description: 'Ultimaker S5',
+            file: 'http://speed.transip.nl/1gb.bin?mac',
+            title: 'Ultimaker S5 Firmware v1.0',
+            name: 'download',
+            selected: false,
+        }],
+        submitButton: {
+            label: 'Download'
+        },
+    },
 };
