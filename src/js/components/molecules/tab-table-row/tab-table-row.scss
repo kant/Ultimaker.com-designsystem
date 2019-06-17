@@ -9,30 +9,38 @@
         padding: ($buildingUnit * 1.5) 0;
     }
 
-    &:first-of-type{
-        border-top: 2px solid $colorGrayLight;    
+    &:first-of-type {
+        border-top: 2px solid $colorGrayLight;
     }
-    &:last-of-type{
+    &:last-of-type {
         border-bottom: 2px solid $colorGrayLight;
     }
 
-    &__label{
+    &__tooltip-label,
+    &__label {
         flex: 1;
         font-weight: map-get($fontWeights, "semibold");
         @include font-line-ratio(prim-s);
 
         &-text {
-            margin-top: -2px;
-            margin-bottom: 0;
+            margin: -2px ($buildingUnit * 1.5) 0;
         }
     }
 
-    &__value{
-        margin-top: $buildingUnit * 1.75;
+    &__tooltip-label {
+        margin-top: $buildingUnit * -1;
+
+        @include min-tablet() {
+            margin-top: $buildingUnit * -1.5;
+        }
+    }
+
+    &__value {
+        margin: ($buildingUnit * 1.75) ($buildingUnit * 1.5) 0;
         @include font-line-ratio(prim-s);
 
         @include min-tablet() {
-            margin-top: 0;
+            margin: 0;
         }
     }
 
@@ -41,18 +49,23 @@
     }
 
     &__linklist {
-        margin-top: $buildingUnit * 1.75;
-     
         @extend %reset-list;
+        margin: ($buildingUnit * 1.75) ($buildingUnit * 1.5) 0;
 
-        .tab-table-row__linklist-item{
-            .tab-table-row__linklist-link{
+        @include min-tablet() {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+
+        .tab-table-row__linklist-item {
+            .tab-table-row__linklist-link {
                 margin-bottom: $buildingUnit / 2;
             }
         }
 
-        .tab-table-row__linklist-item:last-child{
-            .tab-table-row__linklist-link{
+        .tab-table-row__linklist-item:last-child {
+            .tab-table-row__linklist-link {
                 margin-bottom: 0;
             }
         }
