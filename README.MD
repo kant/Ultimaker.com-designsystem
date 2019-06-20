@@ -5,7 +5,7 @@ Prerequisites
 -------------
 
 - Git client of your choice
-- NodeJS (Installation through brew(macos)/chocolatey(windows) recommended)
+- NodeJS (Installation through brew (macos) / chocolatey (windows) recommended)
 
 Install
 -------
